@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <title>定位和居中</title>
+        <meta charset="utf-8">
+        <style type="text/css">
+        body{
+            padding:0;
+            margin:0;}
+
+            .container{
+                background:#ccc;
+                width:400px;
+                height:200px;
+                position:absolute;
+                left:50%;
+                top:50%;
+                margin-left:-200px;
+                margin-top:-100px;
+            }
+            .round1,.round2{
+                width:50px;
+                height:50px;
+                background:#fc0;
+            }
+            .round1{
+                position:absolute;
+                left:0;
+                top:0;
+                border-radius:0 0 50px 0;
+            }
+            .round2{
+                position:absolute;
+                right:0;
+                bottom:0;
+                border-radius:50px 0 0 0;
+            }
+            </style>
+            <body>
+                <div class="container">
+                <div class="round1"></div>
+                <div class="round2"></div>
+            </div>
+            </body>
+</html>

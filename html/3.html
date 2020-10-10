@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>baidu ife stage-task3-三栏布局</title>
+        <style type="text/css">
+        body,html{
+            margin:0;
+            padding:10px;
+        }
+        #wrap{
+            margin:15px;
+            padding:10px;
+            background:#9d9d9d;
+            overflow:auto;
+        }
+        #left,#right{
+            background:white;
+            border:1px soild black;
+        }
+        #left
+        {
+            width:200px;
+            float:left;
+            position:relative;
+        }
+        img{
+            width:60px;
+            height:60px;
+            margin:10px;
+        }
+        #img_content{
+            position:absolute;
+            font-size:10px;
+            display:inline-block;
+            top:50%;
+            margin-top:-5px;
+        }
+        #right{
+            width:100px;
+            float:right;
+            margin:0 auto;
+        }
+        #right img{
+            display:block;
+            padding:10px;
+            border:1px soild black;
+        }
+        #middle{
+            width:100%;
+        }
+        #middle_content{
+            margin:0 110px 0 210px;
+            background:white;
+            border:1px soild black;
+            padding:20px;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <div id="left">
+                <img src="7.png">
+                <img src="7.png">
+            </div>
+            <div id="right">
+                <img src="7.png">
+                <img src="7.png">
+                <img src="7.png">
+                <img src="7.png">
+            </div>
+            <div id="middle"><div id="middle_content">
+                <h1>三栏布局：</h1>
+                <p>很长很长的段落，很长很长的段落，很长很长的段落</p>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>
